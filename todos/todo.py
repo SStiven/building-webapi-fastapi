@@ -3,7 +3,8 @@ from model import Todo, TodoList
 
 todo_router = APIRouter()
 
-todo_list = TodoList(todos=[Todo(id = 1, item ="finish this book"), Todo(id = 2, item = "second todo")])
+#todo_list = TodoList(todos=[Todo(id = 1, item ="finish this book"), Todo(id = 2, item = "second todo")])
+todo_list = []
 
 @todo_router.post("/todo")
 async def add_todo(todo: Todo) -> dict:
